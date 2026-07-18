@@ -41,10 +41,12 @@ body{
   padding: 30px 20px;
   color:white;
   width:90%;
+  height: 450px;
 }
 .Main-content img{
   width:100%;
   height:280px;
+  object-fit: cover;
 }
 .Main-content h1{
   font-size: 90px;
@@ -52,3 +54,15 @@ body{
   font-weight: lighter;
   margin: 20px 0px;
 } 
+.products-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  width: 84%;
+  margin-left: 16%;
+  padding-bottom: 200px;
+}

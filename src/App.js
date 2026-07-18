@@ -4,7 +4,6 @@ import Navbar from './components/navbar';
 import Homepage from './pages/homepage';
 import Plantspage from './pages/plants';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import Component3 from './components/practice component/component3';  
 import { useMemo,useState,useContext } from 'react';
 
 export default function App() {

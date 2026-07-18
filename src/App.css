@@ -531,6 +531,47 @@ gap: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  width: 285px;
+  height: 505px;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.product-image img{
+  width: 285px;
+  height: 378px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.badge{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: olive;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.product-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.product-actions{
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+}
+.product-actions button{
+  padding: 10px 105px;
+  background-color: transparent;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid white;
 }
