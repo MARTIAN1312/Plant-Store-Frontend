@@ -575,3 +575,69 @@ gap: 40px;
   color: white;
   border: 1px solid white;
 }
+.authentication-container{
+  display: flex;
+  width: 70vw;
+  height:70vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 18px;
+overflow: hidden;
+}
+.login-page{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width:40%;
+  height:100%;
+  background-color:  #302f2f;
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 5px 30px;
+}
+.login-page button{
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 18px;
+  padding:10px 30px;
+  color:white;
+}
+.login-page button:hover{
+  background-color: #be5a09;
+
+}
+.signup-page{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:20px;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.signup-page label{
+  color: #302f2f;
+  font:18px
+}
+.signup-page input{
+  border:none;
+  border-bottom: 1px solid grey;
+  padding:10px 30px;
+  text-align: center;
+  outline: none;
+
+}
+.signup-page button{
+  padding:10px 90px;
+  border-radius: 18px;
+  background-color: #be5a09;
+  border:1px solid black;
+  color: white;
+}
+.signup-page button:hover{
+  background-color: transparent;
+  color: black;
+}

@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './components/navbar';
 import Homepage from './pages/homepage';
 import Plantspage from './pages/plants';
+import Signup from './pages/signupPage';
+import Login from './pages/loginPage';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import { useMemo,useState,useContext } from 'react';
 
@@ -17,6 +19,7 @@ export default function App() {
         <Route path='/:category' element={<Plantspage />} />
       </Routes>
     </BrowserRouter>
+    <Login/>
     {/* <button onClick={()=>{setadd(add+1)}}>Add</button>
     <span>{add}</span>
     <Component3 add={add}/> */}
@@ -25,8 +28,9 @@ export default function App() {
         <Component3/>
       </person_name2.Provider>
     </person_name.Provider> */}
-   
+      
     </>
   )
 }
+
 
