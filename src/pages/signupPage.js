@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom"
 export default function Signup(){
     return(
         <>
+         <div className="authentication-page-row`">
          <div className="authentication-container">
             <div className="login-page">
               <h3>If you already have an account just Login . </h3>
-              <button>LogIN</button>
+              <button><Link to='/login'>LOG IN</Link></button>
             </div>
             <div className="signup-page">
               <h3>Create Your Account</h3>
@@ -16,6 +18,7 @@ export default function Signup(){
               <input type="password" placeholder="Password"/>
               <button >SignUP</button>
             </div>
+         </div>
          </div>
         </>
     )
