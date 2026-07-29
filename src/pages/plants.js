@@ -5,11 +5,12 @@ import Sidebar from '../components/sidebar';
 import Maincontent from '../components/maincontent';
 import { ProductCard } from '../components/product_card';
 import Footer from '../components/footer';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useEffect,useState } from 'react';
 export default function Plantspage(){
 const {category} = useParams()
 const [Products,setProducts]=useState([])
+const navigate = useNavigate()
 
 const getData = async()=>{
     try {
@@ -24,6 +25,11 @@ const getData = async()=>{
    useEffect(()=>{
     getData()
    },[category])
+
+   useEffect(() => {
+        const validCategories = ['plants', 'pots', 'sales']
+        if(!validCategories.includes(category)) navigate("/")
+   }, [])
 
 //     const products= [
 //     {
